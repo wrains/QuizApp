@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 25px 0 15px 25px;
+    display: inline-block;
+    width: 100%;
+}
+
+.ecomm-quiz > img {
+    width: 30%;
+    height: auto;
+    display: inline-block;
+}
+
+.container {
+    width: 95%;
+    height: 50%;
+    margin: 10px auto 0 25px;
+}
+
+.content-body {
+    margin: 15px 0 15px 0;
+    margin-bottom: 15px;
+    display: none;
+}
+
+.show-active {
+    display: block;
+
+}
+
+.question-text {
+    margin-bottom: 15px;
+}
+
+.answer-choice {
+    background-color: #f1f1f1;
+    margin: 0 0 2px 0;
+    padding: 5px 10px;
+}
+
+.content-body > div:first-of-type {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.content-body > div:nth-of-type(4) {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.answer-choice > input {
+    display: inline;
+}
+
+.answer-choice > label {
+    display: inline;
+    margin-left: 6px;
+}
+
+
+#footer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 2px;
+
+}
+
+button:hover {
+    opacity: .5;
+}
+
+#footer > button:nth-of-type(1) {
+    /* visibility: hidden; */
+
+}
+
+#footer > button:nth-of-type(2) {
+    margin-left: 15px;
+}
+
+#timer {
+    margin-left: auto;
+}

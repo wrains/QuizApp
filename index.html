@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ecomm-quiz">
+        <h1 class="quiz-title">eCommerce Quiz</h1>
+        <div class="container">
+            <div id="q1-body" class="content-body show-active">
+                <p class="question-text">Which of the following is not a real eCommerce platform?</p>
+                <div class="answer-choice">
+                    <input class="radio-buttons" name="q1" value="ans1q1" type="radio">
+                    <label for="ans1q1">Shopify</label>
+                </div>
+                <div class="answer-choice">
+                    <input class="radio-buttons" name="q1" value="ans2q1" type="radio">
+                    <label for="ans2q1">WooCommerce</label>
+                </div>
+                <div class="answer-choice correct-choice">
+                    <input class="radio-buttons correct-ans" name="q1" value="correct" type="radio">
+                    <label for="ans3q1">ShopCommerce</label>
+                </div>
+                <div class="answer-choice">
+                    <input class="radio-buttons" name="q1" value="ans4q1" type="radio">
+                    <label for="ans4q1">BigCommerce</label>
+                </div>
+            </div>
+            <div id="q2-body" class="content-body">
+                <p class="question-text">If Shopify is so good, why are Shopify developers necessary?</p>
+                <div class="answer-choice">
+                    <input class="radio-buttons" name="q2" value="ans1q2" type="radio">
+                    <label for="ans1q2">To save time on things like store setups and migrations</label>
+                </div>
+                <div class="answer-choice">
+                    <input class="radio-buttons" name="q2" value="ans2q2" type="radio">
+                    <label for="ans2q2">To extend the limited design options and functionalities of themes with custom
+                        code</label>
+                </div>
+                <div class="answer-choice">
+                    <input class="radio-buttons" name="q2" value="ans3q2" type="radio">
+                    <label for="ans3q2">To provide support with a deep understanding of how the platform works and what
+                        its
+                        limitations are</label>
+                </div>
+                <div class="answer-choice correct-choice">
+                    <input class="radio-buttons correct-ans" name="q2" value="correct" type="radio">
+                    <label for="ans4q2">All of the above</label>
+                </div>
+            </div>
+            <div id="q3-body" class="content-body">
+                <p class="question-text">Which of the following is true about Shopify developers?</p>
+                <div class="answer-choice">
+                    <input class="radio-buttons " name="q3" value="ans1q3" type="radio">
+                    <label for="ans1q3">They are paid extremely well</label>
+                </div>
+                <div class="answer-choice">
+                    <input class="radio-buttons" name="q3" value="ans2q3" type="radio">
+                    <label for="ans2q3">There is a high demand for them</label>
+                </div>
+                <div class="answer-choice">
+                    <input class="radio-buttons" name="q3" value="ans3q3" type="radio">
+                    <label for="ans3q3">They need to know web development, the platform itself, and the liquid template
+                        language</label>
+                </div>
+                <div class="answer-choice correct-choice">
+                    <input class="radio-buttons correct-ans" name="q3" value="correct" type="radio">
+                    <label for="ans4q3">All of the above</label>
+                </div>
+            </div>
+            <div id="footer">
+                <button id="back-button" type="button">← Back</button>
+                <button id="adv-button" type="button">Next →</button>
+                <div id="timer"><label id="minutes">00</label>:<label id="seconds">00</label></div>
+                <!-- REPLACE WITH JS CODE FOR QUESTION NUMBER -->
+            </div>
+        </div>
+        <script src="index.js"></script>
+</body>
+
+</html>
