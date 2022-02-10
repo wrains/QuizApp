@@ -7,6 +7,13 @@ let corrNum = 0;
 let placementInQuiz = document.createElement('h3');
 let parentContainer = document.getElementsByClassName('ecomm-quiz')[0];
 let quizTitle = document.getElementsByClassName('quiz-title')[0];
+let answers = [];
+let correctAnswers = [];
+
+//set correct answers array
+correctAnswers = document.getElementsByClassName('correct-ans');
+console.log(correctAnswers);
+
 // console.log(parentContainer, quizTitle);
 placementInQuiz.style.marginLeft = '25px';
 quizTitle.parentNode.insertBefore(placementInQuiz, quizTitle.nextSibling);
@@ -32,7 +39,9 @@ function pad(val) {
     }
 }
 
-
+if (qNum === 1) {
+    document.getElementById('back-button').style.visibility = 'hidden'
+}
 
 
 function advQuestion(curr2) {
@@ -74,17 +83,16 @@ function advQuestion(curr2) {
 let buttonNext = document.querySelectorAll('button')[1];
 buttonNext.addEventListener('click', function (curr1) {
 
-    console.log(curr1.currentTarget.id);
-
     let currInputs = document.getElementsByClassName('show-active')[0].getElementsByClassName('radio-buttons')
     let numChecked = 0;
-
-    for (const currInput of currInputs) {
-
-        if (currInput.checked) {
+    // for (const currInput of currInputs) {
+    for (let ind = 0; ind < currInputs.length; ind++) {
+        if (currInputs[ind].checked) {
             numChecked++;
+            answers[ind] = currInputs[ind];
+            console.log(answers[ind], 'array at index of stored answers');
+            console.log(answers, 'whole array');
         }
-
     }
 
     if (numChecked < 1) {
@@ -158,7 +166,7 @@ buttonNext.addEventListener('click', function (curr1) {
         retryButton.addEventListener('click', function () {
             window.location.replace("index.html");
         })
-
+        console.log(answers, 'print answers array');
     }
 })
 
@@ -171,3 +179,7 @@ buttonBack.addEventListener('click', function (curr1) {
     advQuestion(curr1);
 
 })
+
+
+//current state on this file is that the arrays do not fill in correctly on the answers
+//Not sure why - would need to research. Look up other quiz apps to compare
